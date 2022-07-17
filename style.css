@@ -2,11 +2,12 @@ body {
     height: 100%;
     font-family:'Courier New', Courier, monospace;
     display: flex;
+    background-color: rgba(149, 149, 149, 0.087);
 }
 
 .image {
     height: 100%;
-    width: 35%;
+    width: max(40%, 500px);
     position: relative;
 }
 
@@ -19,34 +20,77 @@ body {
 .logoback {
     position: absolute;
     top: 25%;
+    height: 15%;
     width: 100%;
-    text-align: center;
     background-color: black;
     opacity: 0.6;
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.form {
+.logoback img {
+    height: 70%;
+}
+
+.logoback p {
+    font-size: 4rem;
+}
+
+h3, li,button, .formcontainer div>p, form~p {
+    margin-left: 30px;
+}
+
+.formcontainer {
     display: flex;
     flex-direction: column;
-    width: 65%;
-    /* margin-left: 30px; */
+    width: 100%;
     justify-content: center;
 }
 
-.form div>p{
-    max-width: 75%;
-    font-size: 20px;
+.formcontainer div>p{
+    max-width: 50%;
+    font-size: 1.2rem;
     font-weight: 600;
     margin-bottom: 40px;
 }
 
-form {
-    width: 100%;
+.inputcontainer {
+    background-color: rgba(255, 255, 255, 0.749);
+    
 }
 
+ul{
+    display: flex;
+    width: 50%;
+    flex-wrap: wrap;
+    padding: 0px;
+}
+
+li {
+    list-style-type: none;
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 300px;
+    border: 1px solid #999;
+    border-radius: 5px;
+}
+
+input:invalid{
+    border-color: red;
+}
+
+input:focus{
+    box-shadow: 4px 2px 5px #aaaaaa;
+    border-color: blue;
+}
+
+
 button[type="submit"] {
-    margin: 30px 0px 20px;
     font-size: 18px;
     font-weight: 800;
     color: white;

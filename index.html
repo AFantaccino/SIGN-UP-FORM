@@ -10,36 +10,36 @@
     <section class="image">
         <img src="./images/leaves.jpg" alt="picture of some leaves" class="backimg">
         <div class="logoback">
-            <img src="" alt="the odin project logo">
-            <p>Dicks</p>
+            <img src="./images/odin-lined.png" alt="the odin project logo">
+            <p>ODIN</p>
         </div>
     </section>
-    <section class="form">
+    <section class="formcontainer">
         <div>
-            <p>Lorem ipsum dolor sit amet consectetur, 
-                adipisicing elit. Libero maiores explicabo 
-                praesentium beatae nihil laudantium.
-                Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur, 
-                adipisicing elit. Libero maiores explicabo 
-                praesentium beatae nihil laudantium.</p>
-            <p>Lorem ipsum dolor sit ametLorem ipsum dolor sit amet</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Nihil error consectetur nam odio? Nulla, minima 
+                voluptatibus</p>
+            <p>Lorem ipsum dolor sit amet.</p>
         </div>
         <form action="post">
-            <fieldset>
+            <div class="inputcontainer">
                 <h3>Lorem ipsum dolor sit amet.</h3>
-                <label for="name">First Name</label>
-                <input type="text" name="name" id="name">
-                <label for="surname">Last Name</label>
-                <input type="text" name="surname" id="surname">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email">
-                <label for="phone">Phone Number</label>
-                <input type="tel" name="phone" id="phone">
-                <label for="password">Password</label>
-                <input type="password" name="password" id="password">
-                <label for="password2">Confirm Password</label>
-                <input type="password" name="password" id="password2">
-            </fieldset>
+                <ul>
+                    <li><label for="name">First Name</label>
+                    <input type="text" name="name" id="name"></li>
+                    <li><label for="surname">Last Name</label>
+                    <input type="text" name="surname" id="surname"></li>
+                    <li><label for="email">Email</label>
+                    <input type="email" name="email" id="email"></li>
+                    <li><label for="phone">Phone Number</label>
+                    <input type="tel" name="phone" id="phone"></li>
+                    <li><label for="password">Password</label>
+                    <input type="password" name="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                    title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters"></li>
+                    <li><label for="password2">Confirm Password</label>
+                    <input type="password" name="password" id="password2"></li>
+                </ul>
+            </div>
             <button type="submit">Create Account</button>
         </form>
         <p>Already have an account? <a href="">Log In</a></p>
